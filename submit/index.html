@@ -59,6 +59,12 @@
       $('[data-toggle="popover"]').popover();
   });
   </script>
+      <script>
+  $('input[type="file"]').change(function(e){
+        var fileName = e.target.files[0].name;
+        $('.custom-file-label').html(fileName);
+    });
+            </script>
   <link rel='stylesheet prefetch' href='https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css'>
   <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/material-design-icons/3.0.1/iconfont/material-icons.css'>
   <link rel='stylesheet prefetch' href='https://cdn.rawgit.com/sred9/codevarsity/master/asts/bd.css'>
@@ -384,12 +390,7 @@
             </script>
 
 
-<script>
-  $('input[type="file"]').change(function(e){
-        var fileName = e.target.files[0].name;
-        $('.custom-file-label').html(fileName);
-    });
-            </script>
+
 
 
 
